@@ -1,10 +1,21 @@
 import React from "react";
+import { IoIosArrowDropdown } from "react-icons/io";
 
-const AboutUs = (props) => {
+const AboutUs = ({ title, content, onViewDetails, isExpanded, }) => {
   return (
     <div>
-      <h2>{props.title}</h2>
-      <p>{props.content}</p>
+      <h2>{title}</h2>
+      <p>
+        <button onClick={onViewDetails}>
+          View Details{" "}
+          <IoIosArrowDropdown />
+        </button>
+      </p>
+      {isExpanded && (
+        <div>
+          <p>{content}</p>
+        </div>
+      )}
     </div>
   );
 };
