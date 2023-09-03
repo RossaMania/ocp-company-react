@@ -18,6 +18,7 @@ function App() {
             gambled in markets usually regarded as nonprofit. Hospitals.
             Prisons. Space exploration. I say, good business is where you find
             it.”"
+            id="about"
       />
       <DeltaCity
         title="Delta City"
@@ -34,6 +35,7 @@ function App() {
             buy OCP stock and own a piece of our city. Welcome to our city as it
             should be, and as it will be--in the hands of responsible private
             enterprise!"
+            id="delta"
       />
       <TheFuture
         title="The Future of Law Enforcement"
@@ -50,6 +52,7 @@ function App() {
             comment on Delta City. That’s not my division. But I will tell you
             this: Security Concepts projects the end of crime in Old Detroit
             within 40 days. There's a new guy in town. His name's RoboCop.”"
+            id="future"
       />
     </div>
   );
