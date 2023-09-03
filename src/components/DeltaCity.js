@@ -1,5 +1,5 @@
 import React from "react";
-import { IoIosArrowDropdown } from "react-icons/io";
+import { IoIosArrowDropup } from "react-icons/io";
 
 const DeltaCity = ({ title, content, onViewDetails, isExpanded }) => {
   return (
@@ -7,7 +7,7 @@ const DeltaCity = ({ title, content, onViewDetails, isExpanded }) => {
       <h2>{title}</h2>
       <p>
         <button onClick={onViewDetails}>
-          View Details <IoIosArrowDropdown />
+          View Details <IoIosArrowDropup />
         </button>
       </p>
       {isExpanded && (
