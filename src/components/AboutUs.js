@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
-const AboutUs = () => {
+const AboutUs = (props) => {
   return (
-    <div><h1>This is the About Us component.</h1></div>
-  )
-}
+    <div>
+      <h2>{props.title}</h2>
+      <p>{props.content}</p>
+    </div>
+  );
+};
 
-export default AboutUs
+export default AboutUs;

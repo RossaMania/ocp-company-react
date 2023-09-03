@@ -1,9 +1,12 @@
 import React from 'react'
 
-const TheFuture = () => {
+const TheFuture = (props) => {
   return (
-    <div><h1>This is a component about the future!</h1></div>
-  )
+    <div>
+      <h2>{props.title}</h2>
+      <p>{props.content}</p>
+    </div>
+  );
 }
 
 export default TheFuture

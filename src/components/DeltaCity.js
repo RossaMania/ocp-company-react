@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
-const DeltaCity = () => {
+const DeltaCity = (props) => {
   return (
-    <div><h1>This is the Delta City component.</h1></div>
-  )
-}
+    <div>
+      <h2>{props.title}</h2>
+      <p>{props.content}</p>
+    </div>
+  );
+};
 
-export default DeltaCity
+export default DeltaCity;
