@@ -12,6 +12,10 @@ body {
 }
 
 /* General styling for the cards. */
+
+.whole-card {
+ background-color: #374f6b; /*"Cop Blue" according to Internet. */
+}
 .card-title {
   display: flex;
   gap: 1rem;
@@ -25,6 +29,7 @@ body {
   background-color: #176b87;
   color: #eeeeee;
   text-shadow: #11468f 3px 3px;
+  font-size: 16px;
 }
 
 /* Background image styling for the card bodies. */
@@ -67,4 +72,29 @@ body {
   height: 50%;
   width: 50%;
   position: absolute;
+}
+
+/* Styling for View Details button. */
+
+button {
+  -webkit-border-radius: 30;
+  -moz-border-radius: 30;
+  border-radius: 30px;
+  text-shadow: 3px 3px 0px #11468F;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #64CCC5;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
 }

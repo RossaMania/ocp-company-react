@@ -3,7 +3,7 @@ import { IoIosArrowDropup } from "react-icons/io";
 
 const AboutUs = ({ title, content, onViewDetails, isExpanded, }) => {
   return (
-    <div>
+    <div className="whole-card">
       <div className="card-title">
         <h2>{title}</h2>
         <p>
