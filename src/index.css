@@ -21,6 +21,9 @@ body {
   gap: 1rem;
   justify-content: flex-start;
   align-items: center;
+  color: #64CCC5;
+  text-shadow: #11468f 3px 3px;
+  margin-left: 2.5rem;
 }
 
 .card-body {
