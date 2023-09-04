@@ -37,6 +37,7 @@ body {
 
 /* Background image styling for the card bodies. */
 .about-body {
+  display: flex;
   background-image: url("/src/backgrounds/neonlines.jpg");
   opacity: 0.7;
   background-position: center;

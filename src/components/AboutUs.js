@@ -1,5 +1,7 @@
 import React from "react";
 import { IoIosArrowDropup } from "react-icons/io";
+import DickJonesOCPLogo from "../images/DickJonesOCPLogo.jpg"
+
 
 const AboutUs = ({ title, content, onViewDetails, isExpanded, }) => {
   return (
@@ -9,13 +11,14 @@ const AboutUs = ({ title, content, onViewDetails, isExpanded, }) => {
         <p>
           <button onClick={onViewDetails}>
             View Details
-            <IoIosArrowDropup className="button-icon"/>
+            <IoIosArrowDropup className="button-icon" />
           </button>
         </p>
       </div>
       {isExpanded && (
-        <div>
-          <p className="card-body about-body">{content}</p>
+        <div className="card-body about-body">
+          <img src={DickJonesOCPLogo} alt="Dick Jones of OCP" />
+          <p>{content}</p>
         </div>
       )}
     </div>
