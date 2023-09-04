@@ -15,7 +15,7 @@ const DeltaCity = ({ title, content, onViewDetails, isExpanded }) => {
       </div>
       {isExpanded && (
         <div>
-          <p>{content}</p>
+          <p className="card-body">{content}</p>
         </div>
       )}
     </div>
