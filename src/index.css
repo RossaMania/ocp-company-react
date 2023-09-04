@@ -29,7 +29,7 @@ body {
   background-color: #176b87;
   color: #eeeeee;
   text-shadow: #11468f 3px 3px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 /* Background image styling for the card bodies. */
@@ -80,10 +80,9 @@ button {
   -webkit-border-radius: 30;
   -moz-border-radius: 30;
   border-radius: 30px;
-  text-shadow: 3px 3px 0px #11468F;
   font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
+  color: #11468F;
+  font-size: 1.5rem;
   background: #64CCC5;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
@@ -97,4 +96,10 @@ button:hover {
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
+}
+
+.button-icon {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
 }

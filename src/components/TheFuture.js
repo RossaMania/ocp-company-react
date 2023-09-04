@@ -9,7 +9,7 @@ const TheFuture = ({ title, content, onViewDetails, isExpanded }) => {
         <p>
           <button onClick={onViewDetails}>
             View Details
-            <IoIosArrowDropup />
+            <IoIosArrowDropup className="button-icon" />
           </button>
         </p>
       </div>
