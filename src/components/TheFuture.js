@@ -15,7 +15,7 @@ const TheFuture = ({ title, content, onViewDetails, isExpanded }) => {
       </div>
       {isExpanded && (
         <div>
-          <p className="card-body">{content}</p>
+          <p className="card-body thefuture-body">{content}</p>
         </div>
       )}
     </div>

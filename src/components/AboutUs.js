@@ -15,7 +15,7 @@ const AboutUs = ({ title, content, onViewDetails, isExpanded, }) => {
       </div>
       {isExpanded && (
         <div>
-          <p className="card-body">{content}</p>
+          <p className="card-body about-body">{content}</p>
         </div>
       )}
     </div>
