@@ -4,7 +4,7 @@ import { IoIosArrowDropup } from "react-icons/io";
 const DeltaCity = ({ title, content, onViewDetails, isExpanded }) => {
   return (
     <div>
-      <div>
+      <div className="card-title">
         <h2>{title}</h2>
         <p>
           <button onClick={onViewDetails}>

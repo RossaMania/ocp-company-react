@@ -1,9 +1,9 @@
 import { useState } from "react";
-import "./App.css";
 import AboutUs from "./components/AboutUs";
 import DeltaCity from "./components/DeltaCity";
 import RoboCopTrailer from "./components/RoboCopTrailer";
 import TheFuture from "./components/TheFuture";
+import "./index.css";
 
 function App() {
   const [expanded, setExpanded] = useState(null);
