@@ -33,7 +33,7 @@ const Header = () => {
   const TextOpacity = useTransform(
     scrollY,
     [0, 300, 500, 800],
-    [1, 0.7, 0.4, 0]
+    [1, 0.6, 0.3, 0]
   );
 
   return (
