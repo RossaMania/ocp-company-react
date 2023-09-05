@@ -4,6 +4,7 @@ import DeltaCity from "./components/DeltaCity";
 import RoboCopTrailer from "./components/RoboCopTrailer";
 import TheFuture from "./components/TheFuture";
 import "./index.css";
+import Header from "./components/Header";
 
 function App() {
   const [expanded, setExpanded] = useState(null);
@@ -20,6 +21,7 @@ function App() {
 
    return (
      <div>
+     <Header />
        <AboutUs
          title="About Us"
          content="Omni Consumer Products, or OCP, is the firm which recently agreed
