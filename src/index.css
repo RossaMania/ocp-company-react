@@ -45,7 +45,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.about-text {
+.content-text {
   padding: 1.5rem;
   font-size: 20px;
 }
@@ -59,8 +59,10 @@ body {
   background-repeat: no-repeat;
 }
 
-.deltacity-image {
-  height: auto;
+.publicity-image {
+  opacity: 1;
+  height: 300px;
+  width: 450px;
 }
 
 .thefuture-body {

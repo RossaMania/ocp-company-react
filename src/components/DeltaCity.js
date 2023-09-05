@@ -15,9 +15,13 @@ const DeltaCity = ({ title, content, onViewDetails, isExpanded }) => {
         </p>
       </div>
       {isExpanded && (
-        <div>
-          <img src={DeltaCityPresentation} alt="Delta City" className="deltacity-image"/>
-          <p className="card-body deltacity-body">{content}</p>
+        <div className="card-body deltacity-body">
+          <p className="content-text">{content}</p>
+          <img
+            src={DeltaCityPresentation}
+            alt="Delta City"
+            className="publicity-image"
+          />
         </div>
       )}
     </div>
