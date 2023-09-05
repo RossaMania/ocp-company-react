@@ -30,6 +30,12 @@ const Header = () => {
 
   const yTextMoveLeft = useTransform(scrollY, [0, 100], [0, -300]);
 
+  const TextOpacity = useTransform(
+    scrollY,
+    [0, 300, 500, 800],
+    [1, 0.7, 0.4, 0]
+  );
+
   return (
     <header>
       <motion.img
@@ -46,21 +52,21 @@ const Header = () => {
       />
       <motion.div
         id="header-content-1"
-        style={{ rotate: yTextRotateRight, x: yTextMoveRight }}
+        style={{ rotate: yTextRotateRight, x: yTextMoveRight, opacity: TextOpacity }}
       >
         <h1>It's time we gave something back.</h1>
         <h1>Good business is where you find it.</h1>
       </motion.div>
       <motion.div
         id="header-content-2"
-        style={{ rotate: yTextRotateLeft, x: yTextMoveLeft }}
+        style={{ rotate: yTextRotateLeft, x: yTextMoveLeft, opacity: TextOpacity }}
       >
         <h1>Every citizen will have a living unit.</h1>
         <h1>Safe, secure, and clean.</h1>
       </motion.div>
       <motion.div
         id="header-content-3"
-        style={{ rotate: yTextRotateRight, x: yTextMoveRight }}
+        style={{ rotate: yTextRotateRight, x: yTextMoveRight, opacity: TextOpacity }}
       >
         <h1>We need 24-hour-a-day police.</h1>
         <h1>Cops who don't eat or sleep.</h1>
