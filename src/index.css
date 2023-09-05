@@ -9,6 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 
 /* Styling for the header. */
@@ -23,8 +24,8 @@ header {
   text-shadow: #11468f 3px 3px;
   position: absolute;
   text-align: center;
-  top: 25%;
-
+  top: 35%;
+  left: 25%;
 }
 
 #header-city {
@@ -37,11 +38,11 @@ header {
 }
 
 #header-logo {
-  width: 20rem;
+  width: 15rem;
   max-width: 40%;
   position: absolute;
   top: 10%;
-  left: 40%;
+  left: 45%;
   object-fit: cover;
 }
 

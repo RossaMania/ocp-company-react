@@ -9,16 +9,13 @@ const Header = () => {
       <img src={OCPCompanyLogo} alt="OCP company logo" id="header-logo" />
       <div id="header-content">
         <h1>
-          It's time we gave something back.
-          <strong>Good business is where you find it.</strong>
+          It's time we gave something back. Good business is where you find it.
         </h1>
         <h2>
-          Every citizen will have a living unit.
-          <strong>Safe, secure, and clean.</strong>
+          Every citizen will have a living unit. Safe, secure, and clean.
         </h2>
         <h2>
-          We need 24-hour-a-day police.
-          <strong>Cops who don't eat or sleep.</strong>
+          We need 24-hour-a-day police. Cops who don't eat or sleep.
         </h2>
       </div>
     </header>
