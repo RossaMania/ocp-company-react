@@ -5,8 +5,8 @@ import OCPCompanyLogo from "../images/ocp_company_logo.jpeg"
 const Header = () => {
   return (
     <header>
-      <img src={FoggyNeonCity} alt="City backdrop" />
-      <img src={OCPCompanyLogo} alt="OCP company logo" />
+      <img src={FoggyNeonCity} alt="City backdrop" id="header-city"/>
+      <img src={OCPCompanyLogo} alt="OCP company logo" id="header-logo"/>
     </header>
   );
 }
