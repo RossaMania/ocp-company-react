@@ -22,6 +22,14 @@ const Header = () => {
     [1, 0.7, 0.4, 0]
   );
 
+  const yTextRotateRight = useTransform(scrollY, [0, 100], [0, 45]);
+
+  const yTextMoveRight = useTransform(scrollY, [0, 100], [0, 300]);
+
+  const yTextRotateLeft = useTransform(scrollY, [0, 100], [0, -45]);
+
+  const yTextMoveLeft = useTransform(scrollY, [0, 100], [0, -300]);
+
   return (
     <header>
       <motion.img
@@ -36,15 +44,24 @@ const Header = () => {
         alt="OCP company logo"
         id="header-logo"
       />
-      <motion.div id="header-content-1">
+      <motion.div
+        id="header-content-1"
+        style={{ rotate: yTextRotateRight, x: yTextMoveRight }}
+      >
         <h1>It's time we gave something back.</h1>
         <h1>Good business is where you find it.</h1>
       </motion.div>
-      <motion.div id="header-content-2">
+      <motion.div
+        id="header-content-2"
+        style={{ rotate: yTextRotateLeft, x: yTextMoveLeft }}
+      >
         <h1>Every citizen will have a living unit.</h1>
         <h1>Safe, secure, and clean.</h1>
       </motion.div>
-      <motion.div id="header-content-3">
+      <motion.div
+        id="header-content-3"
+        style={{ rotate: yTextRotateRight, x: yTextMoveRight }}
+      >
         <h1>We need 24-hour-a-day police.</h1>
         <h1>Cops who don't eat or sleep.</h1>
       </motion.div>
