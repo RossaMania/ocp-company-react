@@ -2,6 +2,8 @@ import React from "react"
 import FoggyNeonCity from "../backgrounds/foggyneoncity.jpg"
 import OCPCompanyLogo from "../images/ocp_company_logo.jpeg"
 
+import { motion } from "framer-motion";
+
 const Header = () => {
   return (
     <header>
