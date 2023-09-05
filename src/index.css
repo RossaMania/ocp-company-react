@@ -66,7 +66,6 @@ body {
   background-repeat: no-repeat;
 }
 
-
 .thefuture-body {
   display: flex;
   background-image: url("/src/backgrounds/neoncity.jpg");
@@ -78,11 +77,11 @@ body {
 
 /* "RoboCop Trailer" YouTube Embed styling */
 .video-responsive {
-  margin: auto;
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
+  background-color: #374f6b; /*"Cop Blue" according to Internet. */
 }
 
 .video-responsive iframe {
@@ -91,6 +90,7 @@ body {
   height: 50%;
   width: 50%;
   position: absolute;
+  margin: 100px 400px;
 }
 
 /* Styling for View Details button. */
