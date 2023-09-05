@@ -26,7 +26,7 @@ header {
   position: absolute;
   text-align: center;
   top: 45%;
-  left: 25%;
+  left: 35%;
 }
 
 #header-content-2 {
@@ -36,7 +36,7 @@ header {
   position: absolute;
   text-align: center;
   top: 55%;
-  left: 30%;
+  left: 35%;
 }
 
 #header-content-3 {
@@ -46,7 +46,7 @@ header {
   position: absolute;
   text-align: center;
   top: 65%;
-  left: 30%;
+  left: 35%;
 }
 
 #header-city {

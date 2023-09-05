@@ -15,6 +15,13 @@ const Header = () => {
     [1, 0.7, 0.4, 0]
   );
 
+  const yHeaderLogo = useTransform(scrollY, [0, 800], [0, 500]);
+  const opacityHeaderLogo = useTransform(
+    scrollY,
+    [0, 300, 500, 800],
+    [1, 0.7, 0.4, 0]
+  );
+
   return (
     <header>
       <motion.img
@@ -24,20 +31,22 @@ const Header = () => {
         id="header-city"
       />
       <motion.img
+        style={{ opacity: opacityHeaderLogo, y: yHeaderLogo }}
         src={OCPCompanyLogo}
         alt="OCP company logo"
         id="header-logo"
       />
       <motion.div id="header-content-1">
-        <h1>
-          It's time we gave something back. Good business is where you find it.
-        </h1>
+        <h1>It's time we gave something back.</h1>
+        <h1>Good business is where you find it.</h1>
       </motion.div>
       <motion.div id="header-content-2">
-        <h1>Every citizen will have a living unit. Safe, secure, and clean.</h1>
+        <h1>Every citizen will have a living unit.</h1>
+        <h1>Safe, secure, and clean.</h1>
       </motion.div>
       <motion.div id="header-content-3">
-        <h1>We need 24-hour-a-day police. Cops who don't eat or sleep.</h1>
+        <h1>We need 24-hour-a-day police.</h1>
+        <h1>Cops who don't eat or sleep.</h1>
       </motion.div>
     </header>
   );
