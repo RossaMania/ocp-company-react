@@ -45,12 +45,22 @@ body {
   background-repeat: no-repeat;
 }
 
+.about-text {
+  padding: 1.5rem;
+  font-size: 20px;
+}
+
 .deltacity-body {
+  display: flex;
   background-image: url("/src/backgrounds/neoncityscape.jpg");
   opacity: 0.7;
   background-position: 5% 18%;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.deltacity-image {
+  height: auto;
 }
 
 .thefuture-body {

@@ -18,7 +18,7 @@ const AboutUs = ({ title, content, onViewDetails, isExpanded, }) => {
       {isExpanded && (
         <div className="card-body about-body">
           <img src={DickJonesOCPLogo} alt="Dick Jones of OCP" />
-          <p>{content}</p>
+          <p className="about-text">{content}</p>
         </div>
       )}
     </div>
