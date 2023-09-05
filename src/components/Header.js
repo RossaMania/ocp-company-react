@@ -7,19 +7,19 @@ import { motion } from "framer-motion";
 const Header = () => {
   return (
     <header>
-      <img src={FoggyNeonCity} alt="City backdrop" id="header-city" />
-      <img src={OCPCompanyLogo} alt="OCP company logo" id="header-logo" />
-      <div id="header-content">
+      <motion.img src={FoggyNeonCity} alt="City backdrop" id="header-city" />
+      <motion.img src={OCPCompanyLogo} alt="OCP company logo" id="header-logo" />
+      <motion.div id="header-content-1">
         <h1>
           It's time we gave something back. Good business is where you find it.
         </h1>
-        <h2>
-          Every citizen will have a living unit. Safe, secure, and clean.
-        </h2>
-        <h2>
-          We need 24-hour-a-day police. Cops who don't eat or sleep.
-        </h2>
-      </div>
+      </motion.div>
+      <motion.div id="header-content-2">
+        <h1>Every citizen will have a living unit. Safe, secure, and clean.</h1>
+      </motion.div>
+      <motion.div id="header-content-3">
+        <h1>We need 24-hour-a-day police. Cops who don't eat or sleep.</h1>
+      </motion.div>
     </header>
   );
 }

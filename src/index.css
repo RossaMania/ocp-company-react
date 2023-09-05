@@ -18,14 +18,34 @@ header {
   height: 100vh;
 }
 
-#header-content {
+#header-content-1 {
   z-index: 1;
   color: #64ccc5;
   text-shadow: #11468f 3px 3px;
   position: absolute;
   text-align: center;
-  top: 35%;
+  top: 45%;
   left: 25%;
+}
+
+#header-content-2 {
+  z-index: 1;
+  color: #64ccc5;
+  text-shadow: #11468f 3px 3px;
+  position: absolute;
+  text-align: center;
+  top: 55%;
+  left: 30%;
+}
+
+#header-content-3 {
+  z-index: 1;
+  color: #64ccc5;
+  text-shadow: #11468f 3px 3px;
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 30%;
 }
 
 #header-city {
