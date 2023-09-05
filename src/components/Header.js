@@ -1,14 +1,33 @@
-import React from "react"
-import FoggyNeonCity from "../backgrounds/foggyneoncity.jpg"
-import OCPCompanyLogo from "../images/ocp_company_logo.jpeg"
+import React from "react";
+import FoggyNeonCity from "../backgrounds/foggyneoncity.jpg";
+import OCPCompanyLogo from "../images/ocp_company_logo.jpeg";
 
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const Header = () => {
+  const { scrollY } = useScroll();
+
+  const yHeaderCity = useTransform(scrollY, [0, 200], [0, -100]);
+
+  const opacityHeaderCity = useTransform(
+    scrollY,
+    [0, 200, 300, 500],
+    [1, 0.5, 0.5, 0]
+  );
+
   return (
     <header>
-      <motion.img src={FoggyNeonCity} alt="City backdrop" id="header-city" />
-      <motion.img src={OCPCompanyLogo} alt="OCP company logo" id="header-logo" />
+      <motion.img
+        style={{ opacity: opacityHeaderCity, y: yHeaderCity }}
+        src={FoggyNeonCity}
+        alt="City backdrop"
+        id="header-city"
+      />
+      <motion.img
+        src={OCPCompanyLogo}
+        alt="OCP company logo"
+        id="header-logo"
+      />
       <motion.div id="header-content-1">
         <h1>
           It's time we gave something back. Good business is where you find it.
@@ -22,6 +41,6 @@ const Header = () => {
       </motion.div>
     </header>
   );
-}
+};
 
-export default Header
+export default Header;
