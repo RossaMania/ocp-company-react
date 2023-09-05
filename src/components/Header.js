@@ -7,12 +7,12 @@ import { motion, useScroll, useTransform } from "framer-motion";
 const Header = () => {
   const { scrollY } = useScroll();
 
-  const yHeaderCity = useTransform(scrollY, [0, 200], [0, -100]);
+  const yHeaderCity = useTransform(scrollY, [0, 400], [0, -50]);
 
   const opacityHeaderCity = useTransform(
     scrollY,
-    [0, 200, 300, 500],
-    [1, 0.5, 0.5, 0]
+    [0, 300, 500, 800],
+    [1, 0.7, 0.4, 0]
   );
 
   return (
