@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 import { IoIosArrowDropup } from "react-icons/io";
-import RoboCopDeltaCityCropped from "../images/RoboCopDeltaCityCropped.jpg"
+import RoboCopDeltaCityCropped from "../images/RoboCopDeltaCityCropped.jpg";
 
 const TheFuture = ({ title, content, onViewDetails, isExpanded }) => {
   return (
@@ -16,12 +16,16 @@ const TheFuture = ({ title, content, onViewDetails, isExpanded }) => {
       </div>
       {isExpanded && (
         <div className="card-body thefuture-body">
-        <img src={RoboCopDeltaCityCropped} alt="RoboCop" className="publicity-image" />
-        <p className="content-text">{content}</p>
+          <img
+            src={RoboCopDeltaCityCropped}
+            alt="RoboCop"
+            className="publicity-image"
+          />
+          <p className="content-text">{content}</p>
         </div>
       )}
     </div>
   );
 };
 
-export default TheFuture
+export default TheFuture;

@@ -14,14 +14,14 @@ body {
 /* General styling for the cards. */
 
 .whole-card {
- background-color: #374f6b; /*"Cop Blue" according to Internet. */
+  background-color: #374f6b; /*"Cop Blue" according to Internet. */
 }
 .card-title {
   display: flex;
   gap: 1rem;
   justify-content: flex-start;
   align-items: center;
-  color: #64CCC5;
+  color: #64ccc5;
   text-shadow: #11468f 3px 3px;
   margin-left: 2.5rem;
 }
@@ -29,10 +29,22 @@ body {
 .card-body {
   padding: 10px;
   margin: auto;
-  background-color: #176b87;
+  background: linear-gradient(45deg, #176b87);
   color: #eeeeee;
   text-shadow: #11468f 3px 3px;
   font-size: 1rem;
+}
+
+/* Specific CSS styling for text and image inside card body. */
+.content-text {
+  padding: 1.5rem;
+  font-size: 20px;
+}
+
+.publicity-image {
+  opacity: 1;
+  height: 300px;
+  width: 450px;
 }
 
 /* Background image styling for the card bodies. */
@@ -45,11 +57,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.content-text {
-  padding: 1.5rem;
-  font-size: 20px;
-}
-
 .deltacity-body {
   display: flex;
   background-image: url("/src/backgrounds/neoncityscape.jpg");
@@ -59,11 +66,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.publicity-image {
-  opacity: 1;
-  height: 300px;
-  width: 450px;
-}
 
 .thefuture-body {
   display: flex;
@@ -98,9 +100,9 @@ button {
   -moz-border-radius: 30;
   border-radius: 30px;
   font-family: Arial;
-  color: #11468F;
+  color: #11468f;
   font-size: 1.5rem;
-  background: #64CCC5;
+  background: #64ccc5;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
