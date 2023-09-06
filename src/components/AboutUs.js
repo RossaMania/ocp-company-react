@@ -1,5 +1,4 @@
 import React from "react";
-import { IoIosArrowDropup } from "react-icons/io";
 import DickJonesOCPLogo from "../images/DickJonesOCPLogo.jpg"
 
 import { AnimatePresence, motion } from "framer-motion";
@@ -13,8 +12,11 @@ const AboutUs = ({ title, content, onViewDetails, isExpanded, }) => {
         <p>
           <button onClick={onViewDetails}>
             View Details{" "}
-            <motion.span animate={{ rotate: isExpanded && 180 }}>
-              <IoIosArrowDropup className="button-icon" />
+            <motion.span
+              className="button-icon"
+              animate={{ rotate: isExpanded ? 180 : 0 }}
+            >
+              &#9651;
             </motion.span>
           </button>
         </p>

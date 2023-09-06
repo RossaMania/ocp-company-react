@@ -1,5 +1,4 @@
 import React from "react";
-import { IoIosArrowDropup } from "react-icons/io";
 import RoboCopDeltaCityCropped from "../images/RoboCopDeltaCityCropped.jpg";
 
 import { AnimatePresence, motion } from "framer-motion";
@@ -12,8 +11,11 @@ const TheFuture = ({ title, content, onViewDetails, isExpanded }) => {
         <p>
           <button onClick={onViewDetails}>
             View Details{" "}
-            <motion.span animate={{ rotate: isExpanded ? 180 : 0 }}>
-              <IoIosArrowDropup className="button-icon" />
+            <motion.span
+              className="button-icon"
+              animate={{ rotate: isExpanded ? 180 : 0 }}
+            >
+              &#9651;
             </motion.span>
           </button>
         </p>
