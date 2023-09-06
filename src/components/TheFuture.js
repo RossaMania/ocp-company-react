@@ -2,6 +2,8 @@ import React from "react";
 import { IoIosArrowDropup } from "react-icons/io";
 import RoboCopDeltaCityCropped from "../images/RoboCopDeltaCityCropped.jpg";
 
+import { AnimatePresence, motion } from "framer-motion";
+
 const TheFuture = ({ title, content, onViewDetails, isExpanded }) => {
   return (
     <div className="whole-card">
@@ -9,8 +11,10 @@ const TheFuture = ({ title, content, onViewDetails, isExpanded }) => {
         <h2>{title}</h2>
         <p>
           <button onClick={onViewDetails}>
-            View Details
-            <IoIosArrowDropup className="button-icon" />
+            View Details{" "}
+            <motion.span animate={{ rotate: isExpanded && 180 }}>
+              <IoIosArrowDropup className="button-icon" />
+            </motion.span>
           </button>
         </p>
       </div>

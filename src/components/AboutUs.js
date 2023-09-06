@@ -2,6 +2,8 @@ import React from "react";
 import { IoIosArrowDropup } from "react-icons/io";
 import DickJonesOCPLogo from "../images/DickJonesOCPLogo.jpg"
 
+import { AnimatePresence, motion } from "framer-motion";
+
 
 const AboutUs = ({ title, content, onViewDetails, isExpanded, }) => {
   return (
@@ -10,14 +12,20 @@ const AboutUs = ({ title, content, onViewDetails, isExpanded, }) => {
         <h2>{title}</h2>
         <p>
           <button onClick={onViewDetails}>
-            View Details
-            <IoIosArrowDropup className="button-icon" />
+            View Details{" "}
+            <motion.span animate={{ rotate: isExpanded && 180 }}>
+              <IoIosArrowDropup className="button-icon" />
+            </motion.span>
           </button>
         </p>
       </div>
       {isExpanded && (
         <div className="card-body about-body">
-          <img src={DickJonesOCPLogo} alt="Dick Jones of OCP" className="publicity-image"/>
+          <img
+            src={DickJonesOCPLogo}
+            alt="Dick Jones of OCP"
+            className="publicity-image"
+          />
           <p className="content-text">{content}</p>
         </div>
       )}
