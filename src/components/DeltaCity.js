@@ -18,16 +18,23 @@ const DeltaCity = ({ title, content, onViewDetails, isExpanded }) => {
           </button>
         </p>
       </div>
-      {isExpanded && (
-        <div className="card-body deltacity-body">
-          <p className="content-text">{content}</p>
-          <img
-            src={DeltaCityPresentation}
-            alt="Delta City"
-            className="publicity-image"
-          />
-        </div>
-      )}
+      <AnimatePresence>
+        {isExpanded && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="card-body deltacity-body"
+          >
+            <p className="content-text">{content}</p>
+            <img
+              src={DeltaCityPresentation}
+              alt="Delta City"
+              className="publicity-image"
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

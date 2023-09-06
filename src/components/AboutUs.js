@@ -19,16 +19,23 @@ const AboutUs = ({ title, content, onViewDetails, isExpanded, }) => {
           </button>
         </p>
       </div>
-      {isExpanded && (
-        <div className="card-body about-body">
-          <img
-            src={DickJonesOCPLogo}
-            alt="Dick Jones of OCP"
-            className="publicity-image"
-          />
-          <p className="content-text">{content}</p>
-        </div>
-      )}
+      <AnimatePresence>
+        {isExpanded && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="card-body about-body"
+          >
+            <img
+              src={DickJonesOCPLogo}
+              alt="Dick Jones of OCP"
+              className="publicity-image"
+            />
+            <p className="content-text">{content}</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

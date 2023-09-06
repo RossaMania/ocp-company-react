@@ -12,22 +12,29 @@ const TheFuture = ({ title, content, onViewDetails, isExpanded }) => {
         <p>
           <button onClick={onViewDetails}>
             View Details{" "}
-            <motion.span animate={{ rotate: isExpanded && 180 }}>
+            <motion.span animate={{ rotate: isExpanded ? 180 : 0 }}>
               <IoIosArrowDropup className="button-icon" />
             </motion.span>
           </button>
         </p>
       </div>
-      {isExpanded && (
-        <div className="card-body thefuture-body">
-          <img
-            src={RoboCopDeltaCityCropped}
-            alt="RoboCop"
-            className="publicity-image"
-          />
-          <p className="content-text">{content}</p>
-        </div>
-      )}
+      <AnimatePresence>
+        {isExpanded && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="card-body thefuture-body"
+          >
+            <img
+              src={RoboCopDeltaCityCropped}
+              alt="RoboCop"
+              className="publicity-image"
+            />
+            <p className="content-text">{content}</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
