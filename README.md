@@ -1,5 +1,9 @@
 Thank you for checking out my project! Connect with me on LinkedIn! https://www.linkedin.com/in/ross-clettenberg/
 
+# OmniConsumerProducts (OCP) Information App
+
+Welcome to the OmniConsumerProducts (OCP) Information App! This project is a React-based web application that provides detailed information about the fictional Omni Consumer Products (OCP) company from the RoboCop universe. The application showcases OCP's projects, their corporate vision, and other related information.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
